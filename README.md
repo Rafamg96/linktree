@@ -15,15 +15,22 @@ Una aplicación web estática moderna y profesional tipo Linktree, optimizada pa
 
 ### Despliegue en GitHub Pages
 
+Este repositorio incluye un workflow de GitHub Actions que despliega automáticamente tu sitio a GitHub Pages cuando haces push a la rama `main`.
+
 1. **Fork este repositorio** o clónalo a tu cuenta de GitHub
 
-2. **Personaliza tu contenido** editando `index.html`:
+2. **Activa GitHub Pages**:
+   - Ve a Settings → Pages
+   - En "Source" selecciona "GitHub Actions"
+   - El despliegue se realizará automáticamente con cada push a `main`
+
+3. **Personaliza tu contenido** editando `index.html`:
    - Cambia el título, nombre y biografía
-   - Actualiza la imagen de perfil (línea 19)
+   - Actualiza la imagen de perfil (línea 17)
    - Modifica los enlaces a tus redes sociales
    - Añade o elimina tarjetas de enlaces según necesites
 
-3. **Personaliza los colores** (opcional) en `styles.css`:
+4. **Personaliza los colores** (opcional) en `styles.css`:
    ```css
    :root {
        --primary-color: #6366f1;    /* Color primario */
@@ -31,11 +38,14 @@ Una aplicación web estática moderna y profesional tipo Linktree, optimizada pa
    }
    ```
 
-4. **Activa GitHub Pages**:
-   - Ve a Settings → Pages
-   - En "Source" selecciona la rama `main` o `gh-pages`
-   - Haz clic en "Save"
-   - Tu sitio estará disponible en: `https://tu-usuario.github.io/linktree/`
+5. **Haz commit y push** de tus cambios:
+   ```bash
+   git add .
+   git commit -m "Personalizar sitio"
+   git push
+   ```
+
+6. Tu sitio estará disponible en: `https://tu-usuario.github.io/linktree/`
 
 ## 📝 Personalización
 
